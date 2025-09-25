@@ -1,8 +1,10 @@
 import { NetworkBackground } from './NetworkBackground';
 import networkGlobe from '@/assets/network-globe.png';
-import logoPhone from '@/assets/logo-original.png';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <NetworkBackground />
@@ -32,20 +34,19 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative text-center px-4 max-w-5xl mx-auto" style={{ zIndex: 10 }}>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 animate-fade-in-up">
-          We enhance your efficiency and competitiveness with specialized{' '}
-          <span className="gradient-text-glow">B2B solutions.</span>
+          {t('homepage.title')}
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          Optimizing processes and efficiently managing costs to achieve outstanding results for your organization.
+          {t('homepage.subtitle')}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in" style={{ animationDelay: '0.4s' }}>
           <button className="btn-hero">
-            Discover Our Services
+            {t('homepage.discover_services')}
           </button>
           <button className="px-8 py-4 font-semibold text-foreground border border-border/40 rounded-xl hover:bg-card/20 transition-all duration-300 hover:border-primary/50">
-            Learn More
+            {t('homepage.learn_more')}
           </button>
         </div>
         </div>

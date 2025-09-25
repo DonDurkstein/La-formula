@@ -1,60 +1,63 @@
 import { BarChart3, Building2, Cog, Briefcase, Globe, DollarSign } from 'lucide-react';
-
-const services = [
-  {
-    icon: Cog,
-    title: 'Optimizing',
-    subtitle: 'Processes',
-    description: 'We achieve outstanding results by enhancing processes and efficiently managing costs.',
-    gradient: 'from-primary to-secondary'
-  },
-  {
-    icon: Building2,
-    title: 'Corporate',
-    subtitle: 'Solutions',
-    description: 'Our corporate solutions possess the necessary potential to propel your organization forward.',
-    gradient: 'from-secondary to-accent'
-  },
-  {
-    icon: BarChart3,
-    title: 'Corporate',
-    subtitle: 'Structure',
-    description: 'We develop the corporate and financial structure of your business, optimizing your resources to the highest level.',
-    gradient: 'from-accent to-primary'
-  },
-  {
-    icon: Briefcase,
-    title: 'Top-level',
-    subtitle: 'Portfolio',
-    description: 'We have a portfolio of first-class clients and suppliers, facilitating business relationships.',
-    gradient: 'from-primary to-accent'
-  },
-  {
-    icon: Globe,
-    title: 'Global Business',
-    subtitle: 'Centralization',
-    description: 'Global-level business structures, centralized for easy and remote management.',
-    gradient: 'from-secondary to-primary'
-  },
-  {
-    icon: DollarSign,
-    title: 'Assets',
-    subtitle: 'Banking',
-    description: 'Strategic banking agreements for enhanced asset management.',
-    gradient: 'from-accent to-secondary'
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const ServicesSection = () => {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      icon: Cog,
+      title: t('services.optimizing_processes').split(' ')[0],
+      subtitle: t('services.optimizing_processes').split(' ').slice(1).join(' '),
+      description: t('services.optimizing_description'),
+      gradient: 'from-primary to-secondary'
+    },
+    {
+      icon: Building2,
+      title: t('services.corporate_solutions').split(' ')[0],
+      subtitle: t('services.corporate_solutions').split(' ').slice(1).join(' '),
+      description: t('services.corporate_description'),
+      gradient: 'from-secondary to-accent'
+    },
+    {
+      icon: BarChart3,
+      title: t('services.corporate_structure').split(' ')[0],
+      subtitle: t('services.corporate_structure').split(' ').slice(1).join(' '),
+      description: t('services.structure_description'),
+      gradient: 'from-accent to-primary'
+    },
+    {
+      icon: Briefcase,
+      title: 'Top-Level',
+      subtitle: t('services.top_level_portfolio').split(' ').slice(1).join(' '),
+      description: t('services.portfolio_description'),
+      gradient: 'from-primary to-accent'
+    },
+    {
+      icon: Globe,
+      title: t('services.global_business').split(' ')[0],
+      subtitle: t('services.global_business').split(' ').slice(1).join(' '),
+      description: t('services.global_description'),
+      gradient: 'from-secondary to-primary'
+    },
+    {
+      icon: DollarSign,
+      title: t('services.assets_banking').split(' ')[0],
+      subtitle: t('services.assets_banking').split(' ').slice(1).join(' '),
+      description: t('services.assets_description'),
+      gradient: 'from-accent to-secondary'
+    }
+  ];
+
   return (
     <section id="services" className="py-20 px-4">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Our <span className="gradient-text">Professional Services</span>
+            {t('header.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive B2B solutions designed to enhance your business efficiency and drive sustainable growth.
+            {t('header.description')}
           </p>
         </div>
 
@@ -64,7 +67,7 @@ export const ServicesSection = () => {
             return (
               <div
                 key={index}
-                className="service-card group"
+                className="service-card group relative p-6 rounded-2xl bg-card border border-border/20 hover:border-primary/50 transition-all duration-300 overflow-hidden"
                 style={{ 
                   animationDelay: `${index * 0.1}s`,
                   animation: 'fade-in-up 0.6s ease-out forwards'
@@ -87,7 +90,6 @@ export const ServicesSection = () => {
                   {service.description}
                 </p>
 
-                {/* Hover effect overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </div>
             );
