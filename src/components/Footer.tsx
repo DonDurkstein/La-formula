@@ -71,7 +71,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border/20 text-center">
           <p className="text-muted-foreground">
-            © 2025 La Formula Capital Group. {t('footer.all_rights_reserved') || 'All rights reserved.'} | 
+            © {new Date().getFullYear()} La Formula Capital Group. {t('footer.all_rights_reserved') || 'All rights reserved.'} | 
             <Link to={`${basePath}/privacy`} className="ml-1 hover:text-primary transition-colors">{t('footer.privacy_policy') || 'Privacy Policy'}</Link> | 
             <Link to={`${basePath}/terms`} className="ml-1 hover:text-primary transition-colors">{t('footer.terms_of_service') || 'Terms of Service'}</Link> | 
             <Link to={`${basePath}/cookies`} className="ml-1 hover:text-primary transition-colors">Cookies</Link>
