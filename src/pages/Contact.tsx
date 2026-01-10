@@ -189,7 +189,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground mb-1">{t('footer.email')}</p>
-                      <a href="mailto:contact@laformulacq.net" className="text-foreground hover:text-primary transition-colors">
+                      <a href="mailto:contact@laformulacg.net" className="text-foreground hover:text-primary transition-colors">
                         {t('footer.email_address')}
                       </a>
                     </div>

@@ -33,7 +33,7 @@ const translations = {
     "footer.news": "News",
     "footer.contact_link": "Contact",
     "footer.email": "Email",
-    "footer.email_address": "contact@laformulacq.net",
+    "footer.email_address": "contact@laformulacg.net",
     "footer.phone": "Phone",
     "footer.phone_number": "",
     "footer.office": "Office",
@@ -208,7 +208,7 @@ const translations = {
     "privacy.rights_withdraw": "The right to withdraw consent",
     "privacy.contact_title": "4. Contact Us",
     "privacy.contact_text": "If you have any questions about this Privacy Policy, please contact us:",
-    "privacy.contact_email": "Email: contact@laformulacq.net",
+    "privacy.contact_email": "Email: contact@laformulacg.net",
     "privacy.contact_location": "Location: New york United States of America",
     
     // Common
@@ -239,7 +239,7 @@ const translations = {
     "cookies.third_party_content": "In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the website and deliver advertisements on and through the website.",
     "cookies.contact_title": "5. Contact Us",
     "cookies.contact_text": "If you have any questions about this Cookies Policy, please contact us:",
-    "cookies.contact_email": "Email: contact@laformulacq.net",
+    "cookies.contact_email": "Email: contact@laformulacg.net",
     "cookies.contact_location": "Location: New york United States of America"
   },
   es: {
@@ -276,7 +276,7 @@ const translations = {
     "footer.news": "Noticias",
     "footer.contact_link": "Contacto",
     "footer.email": "Correo",
-    "footer.email_address": "contact@laformulacq.net",
+    "footer.email_address": "contact@laformulacg.net",
     "footer.phone": "Teléfono",
     "footer.phone_number": "",
     "footer.office": "Oficina",
@@ -455,7 +455,7 @@ const translations = {
     "privacy.rights_withdraw": "El derecho a retirar el consentimiento",
     "privacy.contact_title": "4. Contáctenos",
     "privacy.contact_text": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos:",
-    "privacy.contact_email": "Correo: contact@laformulacq.net",
+    "privacy.contact_email": "Correo: contact@laformulacg.net",
     "privacy.contact_location": "Ubicación: New york United States of America",
     
     // Cookies Page
@@ -482,7 +482,7 @@ const translations = {
     "cookies.third_party_content": "Además de nuestras propias cookies, también podemos usar varias cookies de terceros para informar estadísticas de uso del sitio web y entregar anuncios en y a través del sitio web.",
     "cookies.contact_title": "5. Contáctenos",
     "cookies.contact_text": "Si tiene alguna pregunta sobre esta Política de Cookies, contáctenos:",
-    "cookies.contact_email": "Correo: contact@laformulacq.net",
+    "cookies.contact_email": "Correo: contact@laformulacg.net",
     "cookies.contact_location": "Ubicación: New york United States of America"
   }
 };

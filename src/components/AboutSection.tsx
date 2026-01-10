@@ -132,7 +132,7 @@ export const AboutSection = () => {
         animate={controls}
         className="container mx-auto max-w-7xl relative"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-16 items-center">
           {/* Content */}
           <motion.div 
             className="space-y-8 relative z-10"
@@ -145,7 +145,7 @@ export const AboutSection = () => {
               }
             }}
           >
-            <div>
+            <div className="max-w-1xl">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6">
                 {t('about.section_title') || 'About La Formula Capital Group'}
               </h2>
@@ -202,7 +202,7 @@ export const AboutSection = () => {
               })}
             </motion.div>
 
-            <motion.button 
+            {/* <motion.button 
               className="btn-hero group"
               variants={fadeInUp}
               whileHover={{ 
@@ -220,11 +220,11 @@ export const AboutSection = () => {
               >
                 <ArrowRight />
               </motion.div>
-            </motion.button>
+            </motion.button> */}
           </motion.div>
           
           {/* Visual Element */}
-          <motion.div 
+          {/* <motion.div 
             className="relative mt-8 lg:mt-0"
             initial={{ opacity: 0, x: 50 }}
             animate={{ 
@@ -250,7 +250,7 @@ export const AboutSection = () => {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
     </section>

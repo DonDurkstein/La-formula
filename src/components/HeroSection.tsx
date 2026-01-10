@@ -54,11 +54,11 @@ export const HeroSection = () => {
        
 
         {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" style={{ zIndex: 10 }}>
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" style={{ zIndex: 10 }}>
         <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-gradient-primary rounded-full mt-2 animate-pulse-glow" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

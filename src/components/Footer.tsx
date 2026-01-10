@@ -61,7 +61,7 @@ export const Footer = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">{t('footer.email') || 'Email'}</p>
-                  <p className="text-foreground">{t('footer.email_address') || 'contact@laformulacq.net'}</p>
+                  <p className="text-foreground">{t('footer.email_address') || 'contact@laformulacg.net'}</p>
                 </div>
               </div>
             </div>
