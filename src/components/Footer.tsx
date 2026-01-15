@@ -1,6 +1,7 @@
 import { Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'react-router-dom';
+import logoHD from '@/assets/logo-hd.png';
 
 export const Footer = () => {
   const { t, lang } = useLanguage();
@@ -18,7 +19,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img src='src/assets/logo-hd.png' alt="La Formula Capital Group" className="h-20 w-max" />
+              <img src= {logoHD} alt="La Formula Capital Group" className="h-20 w-max" />
             </div>
             <p className="text-muted-foreground leading-relaxed">
               {t('footer.tagline') || 'Enhancing business efficiency and competitiveness with specialized B2B solutions. La Formula Capital Group - Your success is our formula.'}

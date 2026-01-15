@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Menu, X, ChevronDown, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
+import logoHD from '@/assets/logo-hd.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -49,7 +50,7 @@ export const Header = () => {
           {/* Logo */}
           <Link to={lang === 'es' ? '/spanish' : '/'} className="flex items-center space-x-3 -mt-2">
               <img
-                src="src/assets/logo-hd.png"
+                src={logoHD}
                 alt="La Formula Capital Group"
                 className="h-24 w-auto object-contain"
                 id="logo"
@@ -139,7 +140,7 @@ export const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <img
-                    src="src/assets/logo-hd.png"
+                    src={logoHD}
                     alt="La Formula Capital Group"
                     className="h-20 w-auto object-contain"
                   />
