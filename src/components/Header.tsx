@@ -49,7 +49,7 @@ export const Header = () => {
           {/* Logo */}
           <Link to={lang === 'es' ? '/spanish' : '/'} className="flex items-center space-x-3 -mt-2">
               <img
-                src="https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75"
+                src="src/assets/logo-hd.png"
                 alt="La Formula Capital Group"
                 className="h-24 w-auto object-contain"
                 id="logo"
@@ -139,7 +139,7 @@ export const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <img
-                    src="https://www.laformulacg.net/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=128&q=75"
+                    src="src/assets/logo-hd.png"
                     alt="La Formula Capital Group"
                     className="h-20 w-auto object-contain"
                   />
