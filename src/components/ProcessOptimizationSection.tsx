@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import mobileSVG from '@/assets/mobile-svg.svg';
 
 export const ProcessOptimizationSection = () => {
   const { t } = useLanguage();
@@ -60,7 +61,7 @@ export const ProcessOptimizationSection = () => {
 
           <div className="relative flex justify-center lg:justify-end items-stretch">
             <img
-              src="@/assets/mobile-svg.svg"
+              src={mobileSVG}
               alt={altText}
               className="h-full w-auto object-contain"
             />
