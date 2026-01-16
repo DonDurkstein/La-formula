@@ -100,11 +100,11 @@ export const AboutSection = () => {
             scale: { duration: 1, delay: 0.2 }
           }}
         >
-          <img 
+          {/* <img 
             src={networkGlobe} 
             alt="Network globe"
-            className="w-full h-full object-contain md:hidden sm:idden"
-          />
+            className="w-full h-full object-contain"
+          /> */}
         </motion.div>
 
         {/* Gradient overlays */}
